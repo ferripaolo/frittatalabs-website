@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Clockwork: a protocol-powered Clojure runtime running on iOS with live REPL iteration, hot-swappable evaluation strategies, and macro expansion as a service.">
+  <title>Projects – Paolo Ferri</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="/" class="brand">
+        <span class="brand-mark">◆</span>
+        <span class="brand-name">Paolo Ferri</span>
+      </a>
+      <div class="nav-right">
+        <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">IT</button>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">Menu</button>
+      </div>
+      <div id="nav-menu" class="nav-menu">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Page header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Projects</h1>
+      <p class="lead">Current work and open-source exploration in runtime design and language tooling.</p>
+    </div>
+  </section>
+
+  <!-- Clockwork -->
+  <section class="section">
+    <div class="container">
+      <div class="project-hero">
+        <div class="project-content">
+          <h2>Clockwork</h2>
+          <h3>Protocol-powered Clojure runtime on iOS</h3>
+          
+          <p>Clockwork is a faithful Clojure implementation built from first principles in Swift. It runs a live REPL on iOS with seamless namespace hydration from Git, hot-swappable evaluation strategies, and macro expansion as a service.</p>
+
+          <h4>Core capabilities</h4>
+          <ul class="feature-list">
+            <li><strong>Pluggable evaluation:</strong> Swap evaluators mid-execution for tracing, experimentation, or performance tuning.</li>
+            <li><strong>Remote namespace hydration:</strong> Load Clojure code from Git or remote sources directly into the running runtime.</li>
+            <li><strong>Macro expansion server:</strong> Expansion as a service—trace, inspect, and understand how your code transforms.</li>
+            <li><strong>Live REPL on iOS:</strong> Iterate on UI and logic at the speed of thought. No reload, no rebuild.</li>
+            <li><strong>Full evaluator, compiler, pretty printer:</strong> Everything you need to run real Clojure, nowhere else runs it.</li>
+          </ul>
+
+          <div class="project-ctas">
+            <a href="https://github.com/frittatalabs/clockwork" target="_blank" rel="noopener" class="btn btn-primary">GitHub</a>
+            <a href="https://www.youtube.com/watch?v=vOH_OlqHpXA" target="_blank" rel="noopener" class="btn btn-secondary">Watch the talk</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="philosophy-insight">
+        <h4>Why this matters</h4>
+        <p>Most runtimes are sealed boxes. You can run code, but you can't inspect or swap the machinery. Clockwork rethinks that—evaluation is a protocol, not a black box. This enables something unprecedented: a language as dynamic as Clojure, running on iOS, with the ability to iterate on live UI at the speed of thought.</p>
+        <p>It's a proof point that clarity and composability aren't luxuries. They're the foundation of systems that move.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- In progress -->
+  <section class="section">
+    <div class="container">
+      <h2>In progress</h2>
+      <p>Besides Clockwork, I'm exploring:</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Games & apps</h3>
+          <p>Faithful, modern adaptations of classic games. Clean UI, thoughtful mechanics, real implementation.</p>
+        </div>
+        <div class="card">
+          <h3>Language tooling</h3>
+          <p>Evaluators, macro tracing, namespace management. Making languages observable and understandable.</p>
+        </div>
+        <div class="card">
+          <h3>Distributed systems</h3>
+          <p>Protocol design and runtime architecture that composes across platforms and networks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-final">
+    <div class="container">
+      <h2>Interested?</h2>
+      <p>Whether you want to use Clockwork, collaborate, or discuss runtime design—let's talk.</p>
+      <a href="/contact.html" class="btn btn-primary btn-large">Get in touch</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div>
+        <p><strong>Paolo Ferri</strong></p>
+        <p>Runtime designer. Language hacker.<br>Available for full-time, consulting, and interesting problems.</p>
+      </div>
+      <div>
+        <p><strong>Links</strong></p>
+        <ul>
+          <li><a href="https://github.com/frittatalabs" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.youtube.com/watch?v=vOH_OlqHpXA" target="_blank" rel="noopener">Conj Talk</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p><strong>Based in</strong></p>
+        <p>Washington, USA<br>Work history in Italy & Europe</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Frittata Labs. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get in touch with Paolo Ferri about full-time roles, consulting, or interesting problems in runtime design and language tooling.">
+  <title>Contact – Paolo Ferri</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="/" class="brand">
+        <span class="brand-mark">◆</span>
+        <span class="brand-name">Paolo Ferri</span>
+      </a>
+      <div class="nav-right">
+        <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">IT</button>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">Menu</button>
+      </div>
+      <div id="nav-menu" class="nav-menu">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Page header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Get in touch</h1>
+      <p class="lead">Whether it's a full-time role, a consulting project, or just an interesting problem—let's talk.</p>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-wrapper">
+          <h2>Send a message</h2>
+          
+          <div data-fs-success class="form-success" style="display: none;">
+            <p><strong>Thanks!</strong> I'll be in touch within 1–2 business days.</p>
+          </div>
+          <div data-fs-error class="form-error"></div>
+
+          <form 
+            id="contact-form"
+            class="contact-form"
+          >
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input 
+                type="text" 
+                id="name"
+                name="name" 
+                data-fs-field
+                required 
+                aria-required="true"
+              >
+              <span data-fs-error="name" class="field-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input 
+                type="email" 
+                id="email"
+                name="email" 
+                data-fs-field
+                required 
+                aria-required="true"
+              >
+              <span data-fs-error="email" class="field-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input 
+                type="text" 
+                id="subject"
+                name="subject" 
+                data-fs-field
+                required 
+                aria-required="true"
+                placeholder="Full-time role, consulting, interesting problem..."
+              >
+              <span data-fs-error="subject" class="field-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea 
+                id="message"
+                name="message" 
+                rows="6" 
+                data-fs-field
+                required 
+                aria-required="true"
+                placeholder="Tell me about what you're working on, what you need help with, or what's on your mind."
+              ></textarea>
+              <span data-fs-error="message" class="field-error"></span>
+            </div>
+
+            <button type="submit" data-fs-submit-btn class="btn btn-primary btn-large">Send</button>
+          </form>
+
+          <script>
+            window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+            formspree('initForm', { formElement: '#contact-form', formId: 'mdekkjwn' });
+          </script>
+          <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+        </div>
+
+        <div class="contact-info">
+          <h2>Other ways to reach me</h2>
+          
+          <div class="info-card">
+            <h4>Email</h4>
+            <p><a href="mailto:paolo@frittatalabs.com">paolo@frittatalabs.com</a></p>
+            <p class="meta">Usually responds within 1–2 business days.</p>
+          </div>
+
+          <div class="info-card">
+            <h4>GitHub</h4>
+            <p><a href="https://github.com/frittatalabs" target="_blank" rel="noopener">github.com/frittatalabs</a></p>
+            <p class="meta">Check out Clockwork and other projects.</p>
+          </div>
+
+          <div class="info-card">
+            <h4>About this site</h4>
+            <p>Based in Washington, USA. Work history across the US and Italy. Fluent in Italian, French, Dutch, and conversational in Japanese.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA fallback -->
+  <section class="section" style="text-align: center; padding: var(--spacing-xl) 0;">
+    <div class="container">
+      <p style="color: var(--color-text-secondary); margin-bottom: 0;">Or just email me directly at <strong>paolo@frittatalabs.com</strong></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div>
+        <p><strong>Paolo Ferri</strong></p>
+        <p>Runtime designer. Language hacker.<br>Available for full-time, consulting, and interesting problems.</p>
+      </div>
+      <div>
+        <p><strong>Links</strong></p>
+        <ul>
+          <li><a href="https://github.com/frittatalabs" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.youtube.com/watch?v=vOH_OlqHpXA" target="_blank" rel="noopener">Conj Talk</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p><strong>Based in</strong></p>
+        <p>Washington, USA<br>Work history in Italy & Europe</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Frittata Labs. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
