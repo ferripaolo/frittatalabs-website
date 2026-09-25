@@ -194,6 +194,24 @@ p {
   color: var(--color-accent);
 }
 
+/* Logo shield styling - crops PNG to show only shield, not text */
+.logo-shield {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo-shield img {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+}
+
 .brand-name {
   color: var(--color-text);
 }

@@ -13,8 +13,11 @@
   <div class="container">
     <nav class="nav">
       <a href="/it/" class="brand">
-        <span class="brand-mark">◆</span>
+        <div class="logo-shield">
+          <img src="/assets/images/logo.png" alt="Frittata Labs">
+        </div>
         <span class="brand-name">Paolo Ferri</span>
+        <span class="brand-sub">(conosciuto anche come Paul Richardson negli USA)</span>
       </a>
       <div class="nav-right">
         <button id="lang-toggle" class="lang-toggle" aria-label="Cambia lingua">EN</button>
@@ -45,12 +48,14 @@
       <div class="project-hero">
         <div class="project-content">
           <h2>Clockwork</h2>
-          <h3>Runtime Clojure protocol-powered su iOS</h3>
+          <h3>Runtime Clojure su Swift, compila a Python</h3>
           
-          <p>Clockwork è un'implementazione fedele di Clojure costruita da primi principi in Swift. Esegue un live REPL su iOS con idratazione trasparente di namespace da Git, strategie di valutazione hot-swappable, e macro expansion come servizio.</p>
+          <p>Clockwork è un'implementazione fedele di Clojure costruita da primi principi in Swift. Esegue un live REPL su iOS con idratazione trasparente di namespace da Git, strategie di valutazione hot-swappable, e Python come target di compilazione principale. Il runtime è modulare—puoi definire una dozzina di primitive e il sistema stitches tutto insieme usando composizione monadica.</p>
 
           <h4>Capacità fondamentali</h4>
           <ul class="feature-list">
+            <li><strong>Target di compilazione Python:</strong> Codice Clojure compila a Python, rendendolo incorporabile in qualsiasi ambiente Python.</li>
+            <li><strong>Target di output modulari:</strong> L'architettura supporta qualsiasi target di compilazione—basta definire primitive e comporre.</li>
             <li><strong>Valutazione componibile:</strong> Scambia evaluator durante l'esecuzione per tracing, sperimentazione, o ottimizzazione delle prestazioni.</li>
             <li><strong>Idratazione remota di namespace:</strong> Carica codice Clojure da Git o sorgenti remote direttamente nel runtime in esecuzione.</li>
             <li><strong>Macro expansion server:</strong> Espansione come servizio—traccia, ispeziona, e capisci come il tuo codice si trasforma.</li>
@@ -109,8 +114,11 @@
   <div class="container">
     <div class="footer-content">
       <div>
+        <div class="logo-shield" style="margin-bottom: var(--spacing-md);">
+          <img src="/assets/images/logo.png" alt="Frittata Labs">
+        </div>
         <p><strong>Paolo Ferri</strong></p>
-        <p>Designer di runtime. Language hacker.<br>Disponibile per full-time, consulting, e problemi interessanti.</p>
+        <p>Ingegnere di runtime. Architetto di sistemi.<br>Disponibile per full-time, consulting, e problemi interessanti.</p>
       </div>
       <div>
         <p><strong>Link</strong></p>
@@ -126,7 +134,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Frittata Labs. Tutti i diritti riservati.</p>
+      <p>&copy; 2025–2026 Frittata Labs. Tutti i diritti riservati.</p>
     </div>
   </div>
 </footer>
